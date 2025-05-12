@@ -29,7 +29,7 @@ pipeline {
 
         stage('Deploy with Docker') {
             steps {
-                sh 'docker run -d -p 5000:5000 technova-inventory-app'
+                sh 'docker run -d -p 8080:8080 technova-inventory-app'
             }
         }
     }
